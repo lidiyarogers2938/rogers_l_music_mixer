@@ -2,7 +2,7 @@
 # Zarandah_M_music_mixer
 # Music Mixer
 
-TODO: In this project me and my partner are creating a drag'n drop feature system where the icons have faces of rappers and are listed in the bottom of the webpage where they can be selected and dropped into the same feature box that is grey shaded. As soon as the face looking box are dragged onto the grey shaded box above, the celebrities trademark sounds start to play and now the grey shaded box is changed to  high-fidelity 
+TODO: In this project we are creating a drag'n drop feature system where the icons have faces of rappers and are listed in the bottom of the webpage where they can be selected and dropped into the same feature box that is grey shaded. As soon as the face looking box are dragged onto the grey shaded box above, the celebrities trademark sounds start to play and now the grey shaded box is changed to high-fidelity icons 
 
 ## Installation
 
@@ -26,7 +26,8 @@ TODO: Write history
 
 ## Credits
 
-TODO: Write credits
+TODO: Mohamed-zarandah
+TODO: Lidiya-rogers
 
 ## License
 
