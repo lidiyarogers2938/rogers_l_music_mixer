@@ -1,3 +1,4 @@
+
 # rogers_l_music_mixer
 # Zarandah_M_music_mixer
 # Music Mixer
@@ -6,11 +7,9 @@ TODO: In this project we are creating a drag'n drop feature system where the ico
 
 ## Installation
 
-TODO: Describe the installation process
 
 ## Usage
 
-TODO: Write usage instructions
 
 ## Contributing
 
@@ -22,7 +21,6 @@ TODO: Write usage instructions
 
 ## History
 
-TODO: Write history
 
 ## Credits
 
