@@ -1,15 +1,13 @@
-# rogers_l_music_mixer
+
 # Music Mixer
 
 TODO: Write a project description
 
 ## Installation
 
-TODO: Describe the installation process
 
 ## Usage
 
-TODO: Write usage instructions
 
 ## Contributing
 
@@ -21,7 +19,6 @@ TODO: Write usage instructions
 
 ## History
 
-TODO: Write history
 
 ## Credits
 
