@@ -1,0 +1,171 @@
+/* CSS STYLESHEET START */
+
+.hidden {
+	display: none;
+}
+
+#wrapper {
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+	background-image: url(../images/BG.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -200;
+}
+
+#robotBG {
+	width: 1058px;
+	height: 1135px;
+	margin: 0px auto;
+	/* background-image: url(../images/robot.svg); */
+}
+
+#buttonHolderBG {
+	min-width: 471px;
+	height: 1008px;
+	margin: 0px auto;
+	background-image: url(../images/buttonHolder.svg);
+	align-self: flex-end;
+}
+
+#howTo {
+	color: #f2f2f2;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: bold;
+	font-size: 1.5em;
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	margin-top: 2em;
+	margin-left: 2em;
+	background-color: #525252;
+	border-radius: 0.5em;
+}
+
+#howToLB {
+	position: absolute;
+	width: 100vw;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.822);
+	z-index: 4;
+}
+
+#directions {
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	color: #f2f2f2;
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 6em;
+	background-color: cadetblue;
+	border-radius: 2em;
+	border: thick solid black;
+	padding: 2em;
+	line-height: 1.5em;
+	font-size: 1.5em;
+}
+
+#directionsHeader {
+	font-size: 2rem;
+	margin-bottom: 1em;
+}
+
+#closeLB {
+	color: #f2f2f2;
+	position: absolute;
+	right: 1.5em;
+	top: 1em;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	border: none;
+}
+
+#buttonHolder {
+	width: 272px;
+	height: 667.5px;
+	margin-top: 243px;
+	margin-left: 107px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#mainDrop {
+	width: 486.5px;
+	height: 189.5px;
+	margin-top: 474px;
+	margin-left: 285px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 3;
+}
+
+.dropZone {
+	width: 87.5px;
+	height: 87.5px;
+	z-index: 3;
+}
+
+.buttonColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.buttonHole {
+	width: 87.5px;
+	height: 87.5px;
+}
+
+.loopButton {
+	width: 87.5px;
+	height: 87.5px;
+	filter: grayscale(80%);
+}
+
+.dropRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.noFilter {
+	filter:grayscale(0%)
+}
+
+#robotImage {
+	position: absolute;
+	z-index: 1;
+}
+
+.robotAnimations {
+	filter: grayscale(100%);
+}
+
+#VU_Meter {
+	animation: VUAnimation 2s infinite forwards ;
+}
+
+.speakerCone {
+	animation: speakerSounds 0.5s infinite forwards;
+}
+
+@keyframes VUAnimation {
+	0% {transform: rotate(0deg); } 
+	10% {transform: rotate(5deg);}
+	50% { transform: rotate(-5deg);}
+	75% { transform: rotate(4deg);}
+	100% {transform: rotate(0deg);}
+}
+
+@keyframes speakerSounds {
+	0% { transform: scale(1);}
+	50% { transform: scale(1.005);}
+}

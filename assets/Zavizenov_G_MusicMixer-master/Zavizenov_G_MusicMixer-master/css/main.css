@@ -1,0 +1,357 @@
+.hidden{
+  display:none;
+}
+
+main{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-blend-mode: color;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  position:relative;
+  width:1200px;
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Explainer box styles */
+.explainer-box{
+  position: absolute;
+  z-index: 1000;
+  top:50%;
+  transform: translateY(-50%);
+  border-radius: 20px;
+  width:100%;
+  height:80%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: #B2FEFA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.explainer-box-active{
+  display: flex;
+}
+
+.close-btn{
+  margin-left:auto;
+  margin-top:40px;
+  margin-right:40px;
+  width:50px;
+  transition: 0.5s all;
+  cursor:pointer;
+}
+
+.close-btn-img{
+  width:100%;
+  transition: 0.5s all;
+}
+
+.close-btn:hover .close-btn-img circle{
+  fill: #fff;
+  -webkit-box-shadow: 0px 10px 19px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 19px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 19px 0px rgba(0,0,0,0.75);
+}
+
+.close-btn:hover .close-btn-img rect{
+  fill:#B2FEFA;
+}
+
+.explainer-text{
+  margin-top:100px;
+  color:#ffffff;
+  height:100%;
+}
+
+.explainer-title{
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size:80px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.explainer-subtitle{
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size:24px;
+  margin-top:50px;
+  text-align: center;
+}
+
+/* Question button styles */
+.controll-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:100%;
+  align-items: center;
+  margin-top:40px;
+}
+
+.title{
+  color:#B2FEFA;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size:36px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+}
+
+.reset-button{
+  width: 120px;
+  height:40px;
+  border-radius: 30px;
+  border: 1px solid white;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all;
+  cursor:pointer;
+}
+
+.reset-button:hover{
+  background-color: #0ED2F7;
+}
+
+.reset-text{
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size:20px;
+  font-weight:light;
+  text-align:center;
+}
+
+.question-button{
+  width:50px;
+  transition: 0.5s all;
+  cursor:pointer;
+}
+
+.question-img{
+  width:100%;
+  transition: 0.5s all;
+}
+
+.question-button:hover .question-img{
+  fill: #0ED2F7;
+}
+
+/* Cross svgs */
+
+.cross-1{
+  position:absolute;
+  top:190px;
+  left:0px;
+  width:20px;
+}
+
+.cross-2{
+  position:absolute;
+  top:400px;
+  left:220px;
+  width:20px;
+}
+
+.cross-3{
+  position:absolute;
+  top:250px;
+  right:-20px;
+  width:20px;
+}
+
+.cross-4{
+  position:absolute;
+  top:520px;
+  right:350px;
+  width:20px;
+}
+
+/* Circle svgs */
+
+.ellipse-1{
+  position:absolute;
+  top:580px;
+  left:-50px;
+  width:30px;
+}
+
+.ellipse-2{
+  position:absolute;
+  top:230px;
+  left:350px;
+  width:30px;
+}
+
+.ellipse-3{
+  position:absolute;
+  top:180px;
+  right:250px;
+  width:30px;
+}
+
+.ellipse-4{
+  position:absolute;
+  top:600px;
+  right:-50px;
+  width:30px;
+}
+
+/* Line svgs */
+
+.line-1{
+  position:absolute;
+  top:320px;
+  right:170px;
+  width:3px;
+  transform: rotate(90deg);
+}
+
+.line-2{
+  position:absolute;
+  top:550px;;
+  left:370px;
+  width:3px;
+  transform: rotate(90deg);
+}
+
+.line-3{
+  position:absolute;
+  top:300px;
+  left:-80px;
+  width:3px;
+  transform: rotate(90deg);
+}
+
+.line-4{
+  position:absolute;
+  top:490px;
+  right:-20px;
+  width:3px;
+  transform: rotate(90deg);
+}
+
+/* Styles of controllers */
+
+.controller{
+  /*background-color: black;*/
+  width:360px;
+  margin-top: 10px;
+  background-image: url('../images/controller.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:contain;
+  height: 400px;
+  position: relative;
+  -ms-transform-origin: 50% 57%; /* IE 9 */
+  -webkit-transform-origin: 50% 57%; /* Safari 3-8 */
+  transform-origin: 50% 57%;
+}
+
+.controller-active{
+  -webkit-animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari 3-8 */
+  transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+@keyframes backrotation {
+  0% {
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari 3-8 */
+  transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-359deg);
+  }
+}
+
+.dropzone-active{
+  -webkit-animation: backrotation 3s infinite linear;
+}
+
+.dropzone{
+  /*background-color: red;*/
+  position: absolute;
+  width:135px;
+  height:135px;
+  border-radius: 100px;
+}
+
+.top{
+  position: absolute;
+  top:29px;
+  left:32%;
+  /*transform:translateX(-50%);*/
+}
+
+.left{
+  position: absolute;
+  bottom: 29px;
+  left:1px;
+}
+
+.right{
+  position: absolute;
+  bottom: 29px;
+  right:1px;
+}
+
+.dropzone .instrument-icon{
+  width:100%;
+}
+
+#play-btn{
+  position: absolute;
+  width:80px;
+  height:80px;
+  border-radius: 100px;
+  top:46%;
+  left:50%;
+  transform:translateX(-50%);
+  background-image: url(../images/play-btn.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:contain;
+}
+
+.instruments{
+  width:100%;
+  margin-top:80px;
+  margin-bottom:20px;
+  height: 200px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.instrument-icon{
+  width:10%;
+}
