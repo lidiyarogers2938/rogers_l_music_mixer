@@ -38,7 +38,63 @@ dev.lr_adding_logo
         
 dev.lr_adding_logo
             <img src="images/" alt="" height="" width="">
+    </div><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pick a Sound</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <header>
+       <div>
+         <ul class="navigation">
+          <li class="home">HOME</li>
+          <li class="help">FIND A PSYCHOLOGIST</li>
+          <li class="contact">CONTACT</li>
+        </ul>
     </div>
+    </header>
+    <body>
+    <!--Blurred background through css filter-->
+    <div id="backgroundImage"><img src="media/images/background.jpg" alt="backgroundBlurred"></div>
+      <div id="content">
+          <h1>Save your souls sounds</h1>
+            <section id="sound-board">
+              <!--we want to drop the draggable pieces here -->
+              <div class="music-board">
+                <div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
+                <div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
+                <div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
+                <div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
+                <div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
+              </div>
+            </section>
+              <section class="audio-controls">
+              <button id="play-button" class="button">PLAY</button>
+              <button id="stop-button" class="button">STOP</button>
+              <button id="reset-button" class="button">RESET</button>
+            </section>
+          <!--These are the draggable pieces -->
+          <div class="sound-pieces">
+              <div class="icon"><img draggable src="images/ cardi.png" alt="bird" id="bird"></div>
+              <div class="icon"><img draggable src="images/21.png" alt="coffee" id="coffee"></div>
+              <div class="icon"><img draggable src="images/dababy.jpeg" alt="fire" id="fire"></div>
+              <div class="icon"><img draggable src="images/drake.webp" alt="grass"   id="grass"></div>
+              <div class="icon"><img draggable src="images/khalid.jpeg" alt="rain" id="rain"></div>
+              <div class="icon"><img draggable src="images/logo.svg" alt="thunder" id="thunder"></div>
+              <div class="icon"><img draggable src="media/images/waterDrop.svg" alt="waterDrop"   id="waterDrop"></div>
+              <div class="icon"><img draggable src="media/images/wave.svg" alt="wave" id="wave"></div>
+              <div class="icon"><img draggable src="media/images/whiteNoise.svg" alt="whiteNoise" id="whiteNoise"></div>
+              <div class="icon"><img draggable src="media/images/wind.svg" alt="wind" id="wind"></div>
+          </div>
+        </div>
+    </div>
+    
+    <footer></footer>
+    <script src="js/main.js"></script>
+    </body>
+    </html>
+    
 
 
     <!--tag line title-->
