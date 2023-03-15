@@ -2,285 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Music Mixer</title>
-    <link href="/css/main.css" rel="stylesheet">
+    <title>Pick a Rapper</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!--Header-->
-    <h1 class="hidden">music mixer</h1>
-    <div class="container">
-<header id="main-header" class="grid">
-<div id="header-logo" class="box-color">
-    <h1>Drag To Hear The Artist Rap!</h1>
+<!--Blurred background through css filter-->
+<div id="backgroundImage">
+    <img src="images/rolling-image.jpg" alt="backgroundBlurred">
+</div>
+  <div id="content">
+      <h1>Drag and Drop the Sound To PLay</h1>
+        <section id="sound-board">
+          <!--we want to drop the draggable pieces here -->
+          <div class="music-board">
+			<div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
+			<div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
+			<div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
+			<div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
+			<div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
+          </div>
+		</section>
+		  <section class="audio-controls">
+		  <button id="play-button" class="button">PLAY</button>
+		  <button id="stop-button" class="button">STOP</button>
+		  <button id="reset-button" class="button">RESET</button>
+		</section>
+      <!--These are the draggable pieces -->
+      <div class="sound-pieces">
+          <div class="icon"><img draggable src="images/ cardi.png" alt="bird" id="bird"></div>
+          <div class="icon"><img draggable src="images/21.png" alt="coffee" id="coffee"></div>
+          <div class="icon"><img draggable src="images/dababy.jpeg" alt="fire" id="fire"></div>
+          <div class="icon"><img draggable src="images/drake.webp" alt="grass"   id="grass"></div>
+          <div class="icon"><img draggable src="images/khalid.jpeg" alt="rain" id="rain"></div>
+          <div class="icon"><img draggable src="images/migo.png" alt="thunder" id="thunder"></div>
+          <div class="icon"><img draggable src="images/mustardnormal.jpeg" alt="waterDrop"   id="waterDrop"></div>
+          <div class="icon"><img draggable src="images/offset.jpeg" alt="wave" id="wave"></div>
+          <div class="icon"><img draggable src="images/travis.jpeg" alt="whiteNoise" id="whiteNoise"></div>
+      </div>
+    </div>
 </div>
 
-dev.lr_adding_logo
-
-<!--Main Navigation-->
-<nav id="header-nav" class="box-color">
-    <h2 class="hidden">Main Navigation</h2>
-    
-    <ul class="header-nav-links" id="nav-links">
-        <li>
-           <a href="#lightbox"></a>
-            <div class="sprite" id="background"></div>
-            <h5>Menu</h5>    
-            </a>             
-        </li>
-    </ul>
-
- </header>
-
-<!--Hero Image placement-->
-   <main>
-    <section id="hero" class="grid"> 
-        <div id="hero-image" class="box-color">
-        
-dev.lr_adding_logo
-            <img src="images/" alt="" height="" width="">
-    </div><!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Pick a Sound</title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <header>
-       <div>
-         <ul class="navigation">
-          <li class="home">HOME</li>
-          <li class="help">FIND A PSYCHOLOGIST</li>
-          <li class="contact">CONTACT</li>
-        </ul>
-    </div>
-    </header>
-    <body>
-    <!--Blurred background through css filter-->
-    <div id="backgroundImage"><img src="media/images/background.jpg" alt="backgroundBlurred"></div>
-      <div id="content">
-          <h1>Save your souls sounds</h1>
-            <section id="sound-board">
-              <!--we want to drop the draggable pieces here -->
-              <div class="music-board">
-                <div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
-                <div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
-                <div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
-                <div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
-                <div class="drop-zone"><input class="volume-control" type="range" min="0" max="100" step="1"/></div>
-              </div>
-            </section>
-              <section class="audio-controls">
-              <button id="play-button" class="button">PLAY</button>
-              <button id="stop-button" class="button">STOP</button>
-              <button id="reset-button" class="button">RESET</button>
-            </section>
-          <!--These are the draggable pieces -->
-          <div class="sound-pieces">
-              <div class="icon"><img draggable src="images/ cardi.png" alt="bird" id="bird"></div>
-              <div class="icon"><img draggable src="images/21.png" alt="coffee" id="coffee"></div>
-              <div class="icon"><img draggable src="images/dababy.jpeg" alt="fire" id="fire"></div>
-              <div class="icon"><img draggable src="images/drake.webp" alt="grass"   id="grass"></div>
-              <div class="icon"><img draggable src="images/khalid.jpeg" alt="rain" id="rain"></div>
-              <div class="icon"><img draggable src="images/logo.svg" alt="thunder" id="thunder"></div>
-              <div class="icon"><img draggable src="media/images/waterDrop.svg" alt="waterDrop"   id="waterDrop"></div>
-              <div class="icon"><img draggable src="media/images/wave.svg" alt="wave" id="wave"></div>
-              <div class="icon"><img draggable src="media/images/whiteNoise.svg" alt="whiteNoise" id="whiteNoise"></div>
-              <div class="icon"><img draggable src="media/images/wind.svg" alt="wind" id="wind"></div>
-          </div>
-        </div>
-    </div>
-    
-    <footer></footer>
-    <script src="js/main.js"></script>
-    </body>
-    </html>
-    
-
-
-    <!--tag line title-->
-        <div id="tag-line" class="box-color2">
-        <h2>Title</h2>
-        
-            image?
-        </div>
-    <!--tag line title-->
-        <div id="tag-line" class="box-color2">
-            <h2>Check Out Our Instruments!</h2>
-        </div>
-    </section>
-
-
-    <!---feature box-color-->
-    <section id="features-con" class="grid">
-        <h2 class="hidden">boxes</h2>
-        <section class="feature box-color">
- dev.lr_adding_logo
-                <h3>DJ Mustard</h3>
-                <div class="mustard" id="mustard">
-              <img src="" alt="mustard" width="" height="">
-
-            <h3>Title1</h3>
-            <div class="redheart" id="redheart">
-                <img src="" alt="" width="" height="">
-
-
-            </div>
-        </section>
-
-        <section class="feature box-color">
- dev.lr_adding_logo
-                <h3>DJ Khalid</h3>
-                <div class="djkhalid" id="djkhalid">
-                <img src="images/" alt="djkhalid" height="" width="">
-                </div>
-
-            <h3>Title2</h3>
-            <div class="blueheart" id="blueheart">
-                <img src="images/" alt="" height="" width="">
-            </div>
-
-        </section>
-
-        
-        <section class="feature box-color">
- dev.lr_adding_logo
-                <h3>Metro boomin</h3>
-                <div class="metroboomin" id="metroboomin">
-                <img src="images/" alt="metroboomin" height="" width="">
-
-            <h3>Title3</h3>
-                <div class="greenheart" id="greenheart">
-            <img src="images/" alt="" height="" width="">
-            </div>
-        </section>
-
-
-        <section class="feature box-color">
-            <h3>Title4</h3>
-            <div class="blueheart" id="blueheart">
-                <img src="images/" alt="" height="" width="">
-
-            </div>
-        </section>
-    </section>
-
-
-    <section class="feature box-color">
- dev.lr_adding_logo
-        <h3>21 Savage</h3>
-        <div class="savage" id="savage">
-        <img src="images/" alt="21savage" height="" width="">
-        </div>
-    </section>
-
-
-
-        <h3>Title5</h3>
-        <div class="blueheart" id="blueheart">
-            <img src="images/" alt="" height="" width="">
-        </div>
-    </section>
-    
-
-    <section class="feature box-color">
-        <h3>Title6</h3>
-        <div class="blueheart" id="blueheart">
-            <img src="images/" alt="" height="" width="">
-        </div>
-    </section>
-
-    <section class="feature box-color">
-        <h3>Title7</h3>
-        <div class="blueheart" id="blueheart">
-            <img src="images/" alt="" height="" width="">
-        </div>
-    </section>
-
-
-    <section class="feature box-color">
-        <h3>Title8</h3>
-        <div class="blueheart" id="blueheart">
-            <img src="images/" alt="" height="" width="">
-        </div>
-    </section>
-
-
-    <section class="feature box-color">
-        <h3>Travis Scott</h3>
-        <div class="travisscott" id="travisscott">
-        <img src="images/" alt="travisscott" height="" width="">
-        </div>
-        </section>
-    
-    
-    
-      <section class="feature box-color">
-        <h3>DaBaby</h3>
-        <div class="dababy" id="dababy">
-        <img src="images/" alt="Dababy" height="" width="">
-        </div>
-        </section>
-    
-        <section class="feature box-color">
-        <h3>Migos</h3>
-        <div class="migos" id="migos">
-        <img src="images/" alt="migos" height="" width="">
-        </div>
-        </section>
-    
-    
-        <section class="feature box-color">
-        <h3>Offset</h3>
-        <div class="offset" id="offset">
-        <img src="images/" alt="offset" height="" width="">
-        </div>
-        </section>
-    
-    
-        <section class="feature box-color">
-        <h3>Drake</h3>
-        <div class="drake" id="drake">
-        <img src="images/" alt="drake" height="" width="">
-        </div>
-        </section>
-    
-    
-
-dev.lr_adding_logo
- 
-
-    <section class="feature box-color">
-        <h3>Title9</h3>
-        <div class="blueheart" id="blueheart">
-            <img src="images/" alt="" height="" width="">
-        </div>
-    </section>
-
-
-   
-  </main>
-  <!--End Of Boxes-->
-
-
-  <!--footer-->
-    <div id="footer-con-full" class="footer-box">
-        <div class="container">
-            <footer class="grid">
-                <div class="container" id="box-footer">
-                    <footer class="grid">
-            </footer>
-        </div>
-    </div>
-      <script src="js/main.js"></script>
-    </body>
+<footer></footer>
+<script src="js/main.js"></script>
+</body>
 </html>
-
-
-
-
-
- 
-
-
-
-
