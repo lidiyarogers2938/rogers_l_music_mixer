@@ -21,12 +21,17 @@ body, html {
     float: left;
 }
 
+.box-color {
+    background-color: rgb(164, 162, 165);
+    color: white;
+
 .contact {
     float: right;
 }
 .navigation{
     list-style: none;
     margin: 15px 0;
+   
     text-align: center;
     padding-right: 40px;
 }
@@ -41,6 +46,84 @@ body, html {
 .icon{
     display: inline-block;
 }
+
+/* 3. ---Header--- */
+ 
+
+#header-logo {
+    height: 110px;
+    width: 1170px;
+    grid-column: 1/4;
+    margin-top: 15px;
+    background-color: rgb(145, 106, 149);
+}
+
+
+/* 4. ---Main Hero Image--- */
+
+#hero {
+    margin-top: 0px;
+}
+
+#hero-image {
+    grid-column: 1/-1;
+    width: 1170px;
+    height: 800px;
+    grid-row: 1/3;
+   
+}
+
+#tag-line {
+    grid-column: 1/-1;
+    height: 100px;
+    width: 1170px;
+    grid-row: 2/3;
+    align-self: end;
+    background-color: rgb(228, 98, 98);
+    color: black;
+}
+
+
+/* 5. ---Features--- */
+
+
+#features-con {
+    margin-top: 2px;
+   
+   
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    height: 250px;  
+    margin-top: 50px;
+    position: relative;
+    grid-column: 1/4;
+    padding-left: 40px;
+}
+
+
+#cardi {
+    grid-column: 4/7;
+   
+    background-color: black;
+    height: 250px;
+    
+    
+}
+
+
+
+
+/* 6. ---Footer--- */
+
+#footer-con-full {
+    height: 200px;
+    margin-top: 100px;
+   
+    background-color: rgb(123, 123, 123);
+
 .icon > img {
     width: 200px;
     height: 200px;
@@ -96,6 +179,7 @@ a:hover{
 }
 #sound-board{
     margin-bottom: 80px;
+
 }
 
 .button {
