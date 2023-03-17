@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
 }
+
 body, html {
     height: 100%;
     margin: 0;
     font-family: 'Courier New', monospace;
 }
+
 #backgroundImage{
     filter: blur(4px);
     -webkit-filter: blur(4px);
@@ -13,6 +15,7 @@ body, html {
     position: absolute;
     z-index: -99;
 }
+
 #backgroundImage img{
     width: 100%;
 }
@@ -24,12 +27,14 @@ body, html {
 .contact {
     float: right;
 }
+
 .navigation{
     list-style: none;
     margin: 15px 0;
     text-align: center;
     padding-right: 40px;
 }
+
 .navigation li:hover{
     cursor: pointer;
     text-decoration: underline;
@@ -38,24 +43,25 @@ body, html {
 #content{
     text-align: center;
 }
+
 .icon{
     display: inline-block;
 }
 .icon > img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
     margin: 20px;
 }
 
 .drop-zone {
-	width: 200px;
-    height: 230px;
+	width: 100px;
+    height: 130px;
     margin: 20px;
 }
 
 .icon > img:hover{
     filter: invert(1);
 }
+
 h1{
     text-align: center;
     color: white;
@@ -69,10 +75,12 @@ li{
     display: inline-block;
     font-size: 20px;
 }
+
 a{
     text-decoration:none;
     color: black;
 }
+
 a:hover{
     color: white;
 }
@@ -83,17 +91,20 @@ a:hover{
     border: medium solid #fff;
     color: inherit;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 100px;
 }
+
 .drop-zone img{
     display: block;
 }
+
 .volume-control{
     position: absolute;
     margin: 230px -65px;
 }
+
 #sound-board{
     margin-bottom: 80px;
 }
@@ -120,28 +131,28 @@ a:hover{
     position: relative;
     text-align: left;
     text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
+    transition: box-shadow .15s, transform .15s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    will-change: box-shadow,transform;
+    will-change: box-shadow, transform;
     font-size: 18px;
     width: 15%;
   }
   
-  .button:focus {
+.button:focus {
     box-shadow: black;
-  }
+}
   
-  .button:hover {
+.button:hover {
     transform: translateY(-2px);
-  }
+}
   
-  .button:active {
+.button:active {
     box-shadow: black;
     transform: translateY(2px);
-  }
+}
 .sound-pieces{
     margin-top: 50px;
     padding: 0 10%;
