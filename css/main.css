@@ -49,13 +49,13 @@ body, html {
 }
 .icon > img {
     width: 100px;
-    margin: 20px;
+    margin: 25px;
 }
 
 .drop-zone {
     width: 100px;
-    height: 130px;
-    margin: 20px;
+    height: 30px;
+    margin: 30px;
 }
 
 .icon > img:hover{
@@ -88,16 +88,18 @@ a:hover{
 .drop-zone {
     display: inline-block;
     text-align: center;
-    border: medium solid #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: medium solid orange;
     color: inherit;
     overflow: hidden;
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 60px;
 }
 
 .drop-zone img{
     display: block;
+    margin-left: 10%;
 }
 
 .volume-control{
@@ -131,12 +133,10 @@ a:hover{
     position: relative;
     text-align: left;
     text-decoration: none;
-    transition: box-shadow .15s, transform .15s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    will-change: box-shadow, transform;
     font-size: 18px;
     width: 15%;
   }

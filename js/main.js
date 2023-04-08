@@ -36,7 +36,7 @@
 			event.target.appendChild(nodeCopy);
 			dragId = null;
 			// Hardcode a file path based on the element ID
-			playSound(`media/audio/${droppedElId}.mp3`, nodeCopy.id, event.currentTarget);
+			playSound(`audio/${droppedElId}.mp3`, nodeCopy.id, event.currentTarget);
 		}
 	}
 
